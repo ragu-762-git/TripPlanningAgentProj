@@ -1,0 +1,6 @@
+llm:
+  openrouter:
+    provider: "openrouter"
+    model_name: "openai/gpt-4o-mini"
+    base_url: "https://openrouter.ai/api/v1"
+    

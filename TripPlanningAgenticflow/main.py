@@ -1,6 +1,10 @@
-def main():
-    print("Hello from tripplanningagenticflow!")
+from utils.model_loader import ModelLoader, ConfigLoader
 
 
-if __name__ == "__main__":
-    main()
+config = ConfigLoader()
+model = ModelLoader(config=config)
+llm = model.load_llm()
+
+response = llm.invoke("hi")
+print(response.content)
+

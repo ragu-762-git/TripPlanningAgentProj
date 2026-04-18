@@ -13,3 +13,12 @@ check for an API key before they work, __init__.py is the place to put that logi
 
 
 #while developing - we should use factory method; - explore more on that 
+
+
+App starts
+   ↓
+ConfigLoader() → loads YAML ONCE 
+   ↓
+ModelLoader(config=...) → just uses it
+   ↓
+No repeated loading
