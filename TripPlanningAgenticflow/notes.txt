@@ -10,3 +10,6 @@ from .math_helper import add_numbers
 
 Initialization: If your modules need to connect to a database or 
 check for an API key before they work, __init__.py is the place to put that logic.
+
+
+#while developing - we should use factory method; - explore more on that 
