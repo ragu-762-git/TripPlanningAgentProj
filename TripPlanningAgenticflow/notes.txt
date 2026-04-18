@@ -1,0 +1,12 @@
+The core usage of keeping the __init__.py inside a folder is that to signal 
+the python interpreter to treat that directory as a package to simplify imports
+
+without init 
+from project.utilities.math_helper import add_numbers
+
+with init 
+from .math_helper import add_numbers
+
+
+Initialization: If your modules need to connect to a database or 
+check for an API key before they work, __init__.py is the place to put that logic.
